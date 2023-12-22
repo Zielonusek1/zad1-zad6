@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-	<html lang="pl-PL">
-		<html>
-			<head>
-				<meta charset="utf-8">
-				<title>formularz-gmerek</title>
-			</head>
-			<body>
-			tutaj będzie formularz<br>
-			<A HREF="indeks.html"> wróć</A>
-			</body>
-	</html>
+ <html>
+ <head>
+ <title>FORMULARZ</title> 
+<style>
+h1{
+color: red;
+}
+  body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+ .full-width-red-line {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: red;
+        }
+</style>
+</head> 
+<body>
+<H1> Formularz rekrutacyjny do ZSE w Gdańsku</h1>
+<label for="data_wypełnienia">Data wypełnienia *</label>
+<input type="date" id="data_wypełnienia" name="data_wypełnienia" required>
+<label for="adres">Adres zamieszkania *</label>
+<input type="text" id="adres" name="adres" required>
+<label for="miasto">Miasto</label>
+<input type="text" id="miasto" name="miasto">
+
+<label for="kod_pocztowy">Kod Pocztowy</label>
+<input type="text" id="kod_pocztowy" name="kod_pocztowy">
+
+<img scr="zse.png" alt="logo">
+<hr width="100%" color="red" size="5">
+<label for="imie_nazwisko">Imię i Nazwisko *</label>
+<input type="text" id="imie_nazwisko" name="imie_nazwisko" required>
+<label for="profil">Wybrany profil *</label>
+<select id="profil" name="profil" required>
+    <option value="technik_elektryk">☐technik elektryk</option>
+    <option value="technik_elektronik">☐technik elektronik</option>
+    <option value="technik_informatyk">☐technik informatyk</option>
+    <option value="technik_programista">☐technik programista</option>
+</select>
+<h1>Jakie miałeś wyniki z egzaminu ósmoklasisty?</h1>
+<label for="jezyk_polski">Język polski *</label>
+<select id="jezyk_polski" name="jezyk_polski" required>
+    <option value="podstawowy">0 - 25</option>
+    <option value="zaawansowany">26 - 50</option>
+ <option value="51 - 90">51 - 90</option>
+    <option value="zaawansowany">90 - 100</option>
+</select>
+<label for="jezyk_polski">Język Angielski *</label>
+<select id="jezyk_polski" name="jezyk_polski" required>
+    <option value="podstawowy">0 - 25</option>
+    <option value="zaawansowany">26 - 50</option>
+ <option value="51 - 90">51 - 90</option>
+    <option value="zaawansowany">90 - 100</option>
+</select>
+<label for="jezyk_polski">Matematyka *</label>
+<select id="jezyk_polski" name="jezyk_polski" required>
+    <option value="podstawowy">0 - 25</option>
+    <option value="zaawansowany">26 - 50</option>
+ <option value="51 - 90">51 - 90</option>
+    <option value="zaawansowany">90 - 100</option>
+</select>
+<label for="opis">Opisz siebie w kilku zdaniach i napisz czemu wybrałeś akurat ZSE.</label>
+<textarea id="opis" name="opis" rows="4" cols="50"></textarea>
+<hr width="100%" color="red" size="5">
+<h1> Dane kontaktowe</h1>
+<img scr="zse.png" alt="logo">
+<label for="email">Email *</label>
+<input type="email" id="email" name="email" required>
+<label for="telefon">Numer telefonu *</label>
+<input type="tel" id="telefon" name="telefon" required>
+<input type="submit" value="Submit">
+</form>
+ </body>
+ </html>
+
+
